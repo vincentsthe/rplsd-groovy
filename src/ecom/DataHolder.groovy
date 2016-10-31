@@ -28,6 +28,13 @@ public class DataHolder {
         Product dumbbell = new Product(5, "Dumbbell", 2500000, "10kg")
         Product pisau = new Product(6, "Pisau", 125000, "Tajam")
 
+        productList.add(asus)
+        productList.add(baju)
+        productList.add(iPhone)
+        productList.add(headset)
+        productList.add(dumbbell)
+        productList.add(pisau)
+        
         komputer.addProduct(asus)
         fashion.addProduct(baju)
         gadget.addProduct(iPhone)
