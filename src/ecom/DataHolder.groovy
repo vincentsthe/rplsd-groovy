@@ -34,7 +34,7 @@ public class DataHolder {
         productList.add(headset)
         productList.add(dumbbell)
         productList.add(pisau)
-        
+
         komputer.addProduct(asus)
         fashion.addProduct(baju)
         gadget.addProduct(iPhone)

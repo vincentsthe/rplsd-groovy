@@ -17,6 +17,9 @@ public class Main {
             if ((words.length == 4) && (words[0].equals("search")) && (words[1].equals("product")) && (words[2].equals("in"))) {
                 searchProductInCategory(words[3])
             }
+            if ((words.length == 4) && (words[0].equals("show")) && (words[1].equals("product")) && (words[2].equals("detail"))) {
+                showProductDetail(words[3])
+            }
         }
     }
 
@@ -39,6 +42,18 @@ public class Main {
 
         for (product in c.productList) {
             println("$product.id. $product.name $product.price $product.description ")
+        }
+    }
+
+    static def showProductDetail(String productName) {
+        List<Product> productList = DataHolder.productList
+        for (product in productList) {
+            if (productName.equals(product.name)) {
+                println("Product ID : $product.id")
+                println("Product Name : $product.name")
+                println("Product Price : $product.price")
+                println("Product Description : $product.description ")
+            }
         }
     }
 }
