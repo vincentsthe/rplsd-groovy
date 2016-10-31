@@ -8,6 +8,12 @@ public class Category {
 
     List<Product> productList;
 
+    Category() {
+        this.id = 1
+        this.name = "Komputer"
+        productList = new ArrayList<>();
+    }
+
     Category(int id, String name) {
         this.id = id
         this.name = name;
